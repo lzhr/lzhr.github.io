@@ -68,7 +68,7 @@
 <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="转载" />
+  <meta name="keywords" content="Hexo, NexT" />
 
 
 
@@ -86,19 +86,15 @@
 
 
 
-<meta name="description" content="master: 默认开发分支
-origin: 默认远程版本库">
-<meta property="og:type" content="article">
-<meta property="og:title" content="Git常用命令速查表">
-<meta property="og:url" content="http://lzhr.github.io/2016/05/22/2015-01-30-Git-Resources/index.html">
+<meta name="description" content="Github Pages">
+<meta property="og:type" content="website">
+<meta property="og:title" content="My Pages">
+<meta property="og:url" content="http://lzhr.github.io/archives/2015/01/index.html">
 <meta property="og:site_name" content="My Pages">
-<meta property="og:description" content="master: 默认开发分支
-origin: 默认远程版本库">
-<meta property="og:updated_time" content="2016-05-22T12:47:14.569Z">
+<meta property="og:description" content="Github Pages">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Git常用命令速查表">
-<meta name="twitter:description" content="master: 默认开发分支
-origin: 默认远程版本库">
+<meta name="twitter:title" content="My Pages">
+<meta name="twitter:description" content="Github Pages">
 
 
 
@@ -116,7 +112,7 @@ origin: 默认远程版本库">
   };
 </script>
 
-  <title> Git常用命令速查表 | My Pages </title>
+  <title> 归档 | My Pages </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans,zh-tw,en,default">
@@ -137,7 +133,7 @@ origin: 默认远程版本库">
     
   
 
-  <div class="container one-collumn sidebar-position-left page-post-detail ">
+  <div class="container one-collumn sidebar-position-left  page-archive  ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -209,6 +205,16 @@ origin: 默认远程版本库">
         </li>
       
         
+        <li class="menu-item menu-item-guestbook">
+          <a href="/guestbook" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
+            
+            留言
+          </a>
+        </li>
+      
+        
         <li class="menu-item menu-item-about">
           <a href="/about" rel="section">
             
@@ -258,207 +264,73 @@ origin: 默认远程版本库">
           <div id="content" class="content">
             
 
-  <div id="posts" class="posts-expand">
+  <section id="posts" class="posts-collapse">
+    <span class="archive-move-on"></span>
+
+    <span class="archive-page-counter">
+      
+      
+      
+        
+      
+      嗯..! 目前共计 2 篇日志。 继续努力。
+    </span>
+
     
 
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                Git常用命令速查表
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-05-22T20:38:13+08:00" content="2016-05-22">
-              2016-05-22
-            </time>
-          </span>
-
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/技术/" itemprop="url" rel="index">
-                    <span itemprop="name">技术</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2016/05/22/2015-01-30-Git-Resources/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/05/22/2015-01-30-Git-Resources/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
-          
-          
-             <span id="/2016/05/22/2015-01-30-Git-Resources/" class="leancloud_visitors" data-flag-title="Git常用命令速查表">
-               &nbsp; | &nbsp;
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               <span class="post-meta-item-text">阅读次数 </span>
-               <span class="leancloud-visitors-count"></span>
-              </span>
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
+      
       
       
 
-      
-        <p>master: 默认开发分支</p>
-<p>origin: 默认远程版本库</p>
-<a id="more"></a>
-<p>Head: 默认开发分支</p>
-<p>Head^: Head的父提交</p>
-<h3 id="创建版本库"><a href="#创建版本库" class="headerlink" title="创建版本库"></a>创建版本库</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git clone &lt;url&gt;   #克隆远程版本库</span><br><span class="line">$ git init          #初始化本地版本库</span><br></pre></td></tr></table></figure>
-<h3 id="修改和提交"><a href="#修改和提交" class="headerlink" title="修改和提交"></a>修改和提交</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">$ git status        #查看状态</span><br><span class="line">$ git diff          #查看变更内容</span><br><span class="line">$ git add .         #跟踪所有改动过的文件</span><br><span class="line">$ git add &lt;file&gt;    #跟踪指定的文件</span><br><span class="line">$ git mv &lt;old&gt;&lt;new&gt; #文件改名</span><br><span class="line">$ git rm&lt;file&gt;      #删除文件</span><br><span class="line">$ git rm --cached&lt;file&gt;            #停止跟踪文件但不删除</span><br><span class="line">$ git commit -m &quot;commit messages&quot;  #提交所有更新过的文件</span><br><span class="line">$ git commit --amend               #修改最后一次改动</span><br></pre></td></tr></table></figure>
-<h3 id="查看提交历史"><a href="#查看提交历史" class="headerlink" title="查看提交历史"></a>查看提交历史</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ git log                    #查看提交历史</span><br><span class="line">$ git log -p &lt;file&gt;          #查看指定文件的提交历史</span><br><span class="line">$ git blame &lt;file&gt;           #以列表方式查看指定文件的提交历史</span><br></pre></td></tr></table></figure>
-<h3 id="撤销"><a href="#撤销" class="headerlink" title="撤销"></a>撤销</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ git reset --hard HEAD      #撤销工作目录中所有未提交文件的修改内容</span><br><span class="line">$ git checkout HEAD &lt;file&gt;   #撤销指定的未提交文件的修改内容</span><br><span class="line">$ git revert &lt;commit&gt;        #撤销指定的提交</span><br><span class="line">$ git log --before=&quot;1 days&quot;  #退回到之前1天的版本</span><br></pre></td></tr></table></figure>
-<h3 id="分支与标签"><a href="#分支与标签" class="headerlink" title="分支与标签"></a>分支与标签</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">$ git branch                   #显示所有本地分支</span><br><span class="line">$ git checkout &lt;branch/tag&gt;    #切换到指定分支和标签</span><br><span class="line">$ git branch &lt;new-branch&gt;      #创建新分支</span><br><span class="line">$ git branch -d &lt;branch&gt;       #删除本地分支</span><br><span class="line">$ git tag                      #列出所有本地标签</span><br><span class="line">$ git tag &lt;tagname&gt;            #基于最新提交创建标签</span><br><span class="line">$ git tag -d &lt;tagname&gt;         #删除标签</span><br></pre></td></tr></table></figure>
-<h3 id="合并与衍合"><a href="#合并与衍合" class="headerlink" title="合并与衍合"></a>合并与衍合</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git merge &lt;branch&gt;        #合并指定分支到当前分支</span><br><span class="line">$ git rebase &lt;branch&gt;       #衍合指定分支到当前分支</span><br></pre></td></tr></table></figure>
-<h3 id="远程操作"><a href="#远程操作" class="headerlink" title="远程操作"></a>远程操作</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">$ git remote -v                   #查看远程版本库信息</span><br><span class="line">$ git remote show &lt;remote&gt;        #查看指定远程版本库信息</span><br><span class="line">$ git remote add &lt;remote&gt; &lt;url&gt;   #添加远程版本库</span><br><span class="line">$ git fetch &lt;remote&gt;              #从远程库获取代码</span><br><span class="line">$ git pull &lt;remote&gt; &lt;branch&gt;      #下载代码及快速合并</span><br><span class="line">$ git push &lt;remote&gt; &lt;branch&gt;      #上传代码及快速合并</span><br><span class="line">$ git push &lt;remote&gt; :&lt;branch/tag-name&gt;  #删除远程分支或标签</span><br><span class="line">$ git push --tags                       #上传所有标签</span><br></pre></td></tr></table></figure>
-<h3 id="资料链接"><a href="#资料链接" class="headerlink" title="资料链接"></a>资料链接</h3><ol>
-<li><a href="https://try.github.io/levels/1/challenges/1" target="_blank" rel="external">Try Git</a></li>
-</ol>
-<h2 id="转载自http-painterlin-com-2015-01-30-Git-Resources-html"><a href="#转载自http-painterlin-com-2015-01-30-Git-Resources-html" class="headerlink" title="转载自http://painterlin.com/2015/01/30/Git-Resources.html"></a>转载自<a href="http://painterlin.com/2015/01/30/Git-Resources.html" target="_blank" rel="external">http://painterlin.com/2015/01/30/Git-Resources.html</a></h2>
-      
-    </div>
-
-    <div>
       
         
-      
-    </div>
-
-    <div>
-      
-        
-
-      
-    </div>
-
-    <footer class="post-footer">
-      
-        <div class="post-tags">
-          
-            <a href="/tags/Git/" rel="tag">#Git</a>
-          
+        <div class="collection-title">
+          <h2 class="archive-year motion-element" id="archive-year-2015">2015</h2>
         </div>
       
-
-      
-        <div class="post-nav">
-          <div class="post-nav-next post-nav-item">
-            
-              <a href="/2016/05/22/hello-world/" rel="next" title="Hello World">
-                <i class="fa fa-chevron-left"></i> Hello World
-              </a>
-            
-          </div>
-
-          <div class="post-nav-prev post-nav-item">
-            
-          </div>
-        </div>
       
 
       
-      
-    </footer>
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      <h1 class="post-title">
+        
+            <a class="post-title-link" href="/2015/01/30/Git-Resources/" itemprop="url">
+              
+                <span itemprop="name">Git常用命令速查表</span>
+              
+            </a>
+        
+      </h1>
+
+      <div class="post-meta">
+        <time class="post-time" itemprop="dateCreated"
+              datetime="2015-01-30T00:00:00+08:00"
+              content="2015-01-30" >
+          01-30
+        </time>
+      </div>
+
+    </header>
   </article>
 
 
 
-    <div class="post-spread">
-      
-        <div class="ds-share flat" data-thread-key="2016/05/22/2015-01-30-Git-Resources/"
-     data-title="Git常用命令速查表"
-     data-content=""
-     data-url="http://lzhr.github.io/2016/05/22/2015-01-30-Git-Resources/">
-  <div class="ds-share-inline">
-    <ul  class="ds-share-icons-16">
+    
 
-      <li data-toggle="ds-share-icons-more"><a class="ds-more" href="javascript:void(0);">分享到：</a></li>
-      <li><a class="ds-weibo" href="javascript:void(0);" data-service="weibo">微博</a></li>
-      <li><a class="ds-qzone" href="javascript:void(0);" data-service="qzone">QQ空间</a></li>
-      <li><a class="ds-qqt" href="javascript:void(0);" data-service="qqt">腾讯微博</a></li>
-      <li><a class="ds-wechat" href="javascript:void(0);" data-service="wechat">微信</a></li>
+  </section>
 
-    </ul>
-    <div class="ds-share-icons-more">
-    </div>
-  </div>
-</div>
-      
-    </div>
-  </div>
+  
+
 
 
           </div>
           
 
-  <p>热评文章</p>
-  <div class="ds-top-threads" data-range="weekly" data-num-items="4"></div>
-
 
           
-  <div class="comments" id="comments">
-    
-      <div class="ds-thread" data-thread-key="2016/05/22/2015-01-30-Git-Resources/"
-           data-title="Git常用命令速查表" data-url="http://lzhr.github.io/2016/05/22/2015-01-30-Git-Resources/">
-      </div>
-    
-  </div>
-
 
         </div>
         
@@ -478,17 +350,8 @@ origin: 默认远程版本库">
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
-            文章目录
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview">
-            站点概览
-          </li>
-        </ul>
-      
 
-      <section class="site-overview sidebar-panel ">
+      <section class="site-overview sidebar-panel  sidebar-panel-active ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="https://avatars2.githubusercontent.com/u/6972978"
@@ -601,17 +464,6 @@ origin: 默认远程版本库">
       </section>
 
       
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-            
-              
-            
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#创建版本库"><span class="nav-number">1.</span> <span class="nav-text">创建版本库</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#修改和提交"><span class="nav-number">2.</span> <span class="nav-text">修改和提交</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#查看提交历史"><span class="nav-number">3.</span> <span class="nav-text">查看提交历史</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#撤销"><span class="nav-number">4.</span> <span class="nav-text">撤销</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#分支与标签"><span class="nav-number">5.</span> <span class="nav-text">分支与标签</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#合并与衍合"><span class="nav-number">6.</span> <span class="nav-text">合并与衍合</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#远程操作"><span class="nav-number">7.</span> <span class="nav-text">远程操作</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#资料链接"><span class="nav-number">8.</span> <span class="nav-text">资料链接</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#转载自http-painterlin-com-2015-01-30-Git-Resources-html"><span class="nav-number"></span> <span class="nav-text">转载自http://painterlin.com/2015/01/30/Git-Resources.html</span></a></div>
-            
-          </div>
-        </section>
-      
 
     </div>
   </aside>
@@ -644,10 +496,24 @@ origin: 默认远程版本库">
   </a>
 </div>
 
-<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
-</script>
 
         
+
+<div class="busuanzi-count">
+
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv"><i class="fa fa-user"></i><span class="busuanzi-value" id="busuanzi_value_site_uv"></span></span>
+  
+
+  
+    <span class="site-pv"><i class="fa fa-eye"></i><span class="busuanzi-value" id="busuanzi_value_site_pv"></span></span>
+  
+  
+</div>
+
+
 
         
       </div>
@@ -717,9 +583,11 @@ origin: 默认远程版本库">
 
 
   
-  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
-<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
-
+  
+    <script type="text/javascript" id="motion.page.archive">
+      $('.archive-year').velocity('transition.slideLeftIn');
+    </script>
+  
 
 
   
