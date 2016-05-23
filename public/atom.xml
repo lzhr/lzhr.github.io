@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>My Pages</title>
+  <subtitle>Hexo</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://lzhr.github.io/"/>
+  <updated>2016-05-22T12:41:42.212Z</updated>
+  <id>http://lzhr.github.io/</id>
+  
+  <author>
+    <name>lzhr</name>
+    <email>lzhrsmile@gmail.com</email>
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://lzhr.github.io/2016/05/22/hello-world/"/>
+    <id>http://lzhr.github.io/2016/05/22/hello-world/</id>
+    <published>2016-05-22T07:12:30.281Z</published>
+    <updated>2016-05-22T12:41:42.212Z</updated>
+    
+    <content type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&quot;https://hexo.io/docs/troubleshooting.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&quot;https://github.com/hexojs/hexo/issues&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&quot;Quick-Start&quot;&gt;&lt;a href=&quot;#Quick-Start&quot; class=&quot;headerlink&quot; title=&quot;Quick Start&quot;&gt;&lt;/a&gt;Quick Start&lt;/h2&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;h3 id=&quot;Create-a-new-post&quot;&gt;&lt;a href=&quot;#Create-a-new-post&quot; class=&quot;headerlink&quot; title=&quot;Create a new post&quot;&gt;&lt;/a&gt;Create a new post&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ hexo new &lt;span class=&quot;string&quot;&gt;&quot;My New Post&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;More info: &lt;a href=&quot;https://hexo.io/docs/writing.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Writing&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&quot;Run-server&quot;&gt;&lt;a href=&quot;#Run-server&quot; class=&quot;headerlink&quot; title=&quot;Run server&quot;&gt;&lt;/a&gt;Run server&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ hexo server&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;More info: &lt;a href=&quot;https://hexo.io/docs/server.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Server&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&quot;Generate-static-files&quot;&gt;&lt;a href=&quot;#Generate-static-files&quot; class=&quot;headerlink&quot; title=&quot;Generate static files&quot;&gt;&lt;/a&gt;Generate static files&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ hexo generate&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;More info: &lt;a href=&quot;https://hexo.io/docs/generating.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Generating&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&quot;Deploy-to-remote-sites&quot;&gt;&lt;a href=&quot;#Deploy-to-remote-sites&quot; class=&quot;headerlink&quot; title=&quot;Deploy to remote sites&quot;&gt;&lt;/a&gt;Deploy to remote sites&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ hexo deploy&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;More info: &lt;a href=&quot;https://hexo.io/docs/deployment.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Deployment&lt;/a&gt;&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&quot;https://hexo.io/docs/troubleshooting.html&quot;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&quot;https://github.com/hexojs/hexo/issues&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&quot;Quick-Start&quot;&gt;&lt;a href=&quot;#Quick-Start&quot; class=&quot;headerlink&quot; title=&quot;Quick Start&quot;&gt;&lt;/a&gt;Quick Start&lt;/h2&gt;
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Git常用命令速查表</title>
+    <link href="http://lzhr.github.io/2015/01/30/Git-Resources/"/>
+    <id>http://lzhr.github.io/2015/01/30/Git-Resources/</id>
+    <published>2015-01-29T16:00:00.000Z</published>
+    <updated>2016-05-22T12:47:14.569Z</updated>
+    
+    <content type="html">&lt;p&gt;master: 默认开发分支&lt;/p&gt;
+&lt;p&gt;origin: 默认远程版本库&lt;/p&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;p&gt;Head: 默认开发分支&lt;/p&gt;
+&lt;p&gt;Head^: Head的父提交&lt;/p&gt;
+&lt;h3 id=&quot;创建版本库&quot;&gt;&lt;a href=&quot;#创建版本库&quot; class=&quot;headerlink&quot; title=&quot;创建版本库&quot;&gt;&lt;/a&gt;创建版本库&lt;/h3&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ git clone &amp;lt;url&amp;gt;   #克隆远程版本库&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;$ git init          #初始化本地版本库&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h3 id=&quot;修改和提交&quot;&gt;&lt;a href=&quot;#修改和提交&quot; class=&quot;headerlink&quot; title=&quot;修改和提交&quot;&gt;&lt;/a&gt;修改和提交&lt;/h3&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ git status        #查看状态&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;$ git diff          #查看变更内容&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;$ git add .         #跟踪所有改动过的文件&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;$ git add &amp;lt;file&amp;gt;    #跟踪指定的文件&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;$ git mv &amp;lt;old&amp;gt;&amp;lt;new&amp;gt; #文件改名&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;$ git rm&amp;lt;file&amp;gt;      #删除文件&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;$ git rm --cached&amp;lt;file&amp;gt;            #停止跟踪文件但不删除&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;$ git commit -m &amp;quot;commit messages&amp;quot;  #提交所有更新过的文件&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;$ git commit --amend               #修改最后一次改动&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h3 id=&quot;查看提交历史&quot;&gt;&lt;a href=&quot;#查看提交历史&quot; class=&quot;headerlink&quot; title=&quot;查看提交历史&quot;&gt;&lt;/a&gt;查看提交历史&lt;/h3&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ git log                    #查看提交历史&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;$ git log -p &amp;lt;file&amp;gt;          #查看指定文件的提交历史&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;$ git blame &amp;lt;file&amp;gt;           #以列表方式查看指定文件的提交历史&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h3 id=&quot;撤销&quot;&gt;&lt;a href=&quot;#撤销&quot; class=&quot;headerlink&quot; title=&quot;撤销&quot;&gt;&lt;/a&gt;撤销&lt;/h3&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ git reset --hard HEAD      #撤销工作目录中所有未提交文件的修改内容&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;$ git checkout HEAD &amp;lt;file&amp;gt;   #撤销指定的未提交文件的修改内容&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;$ git revert &amp;lt;commit&amp;gt;        #撤销指定的提交&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;$ git log --before=&amp;quot;1 days&amp;quot;  #退回到之前1天的版本&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h3 id=&quot;分支与标签&quot;&gt;&lt;a href=&quot;#分支与标签&quot; class=&quot;headerlink&quot; title=&quot;分支与标签&quot;&gt;&lt;/a&gt;分支与标签&lt;/h3&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ git branch                   #显示所有本地分支&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;$ git checkout &amp;lt;branch/tag&amp;gt;    #切换到指定分支和标签&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;$ git branch &amp;lt;new-branch&amp;gt;      #创建新分支&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;$ git branch -d &amp;lt;branch&amp;gt;       #删除本地分支&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;$ git tag                      #列出所有本地标签&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;$ git tag &amp;lt;tagname&amp;gt;            #基于最新提交创建标签&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;$ git tag -d &amp;lt;tagname&amp;gt;         #删除标签&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h3 id=&quot;合并与衍合&quot;&gt;&lt;a href=&quot;#合并与衍合&quot; class=&quot;headerlink&quot; title=&quot;合并与衍合&quot;&gt;&lt;/a&gt;合并与衍合&lt;/h3&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ git merge &amp;lt;branch&amp;gt;        #合并指定分支到当前分支&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;$ git rebase &amp;lt;branch&amp;gt;       #衍合指定分支到当前分支&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h3 id=&quot;远程操作&quot;&gt;&lt;a href=&quot;#远程操作&quot; class=&quot;headerlink&quot; title=&quot;远程操作&quot;&gt;&lt;/a&gt;远程操作&lt;/h3&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ git remote -v                   #查看远程版本库信息&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;$ git remote show &amp;lt;remote&amp;gt;        #查看指定远程版本库信息&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;$ git remote add &amp;lt;remote&amp;gt; &amp;lt;url&amp;gt;   #添加远程版本库&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;$ git fetch &amp;lt;remote&amp;gt;              #从远程库获取代码&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;$ git pull &amp;lt;remote&amp;gt; &amp;lt;branch&amp;gt;      #下载代码及快速合并&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;$ git push &amp;lt;remote&amp;gt; &amp;lt;branch&amp;gt;      #上传代码及快速合并&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;$ git push &amp;lt;remote&amp;gt; :&amp;lt;branch/tag-name&amp;gt;  #删除远程分支或标签&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;$ git push --tags                       #上传所有标签&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h3 id=&quot;资料链接&quot;&gt;&lt;a href=&quot;#资料链接&quot; class=&quot;headerlink&quot; title=&quot;资料链接&quot;&gt;&lt;/a&gt;资料链接&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;&lt;a href=&quot;https://try.github.io/levels/1/challenges/1&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Try Git&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&quot;转载自http-painterlin-com-2015-01-30-Git-Resources-html&quot;&gt;&lt;a href=&quot;#转载自http-painterlin-com-2015-01-30-Git-Resources-html&quot; class=&quot;headerlink&quot; title=&quot;转载自http://painterlin.com/2015/01/30/Git-Resources.html&quot;&gt;&lt;/a&gt;转载自&lt;a href=&quot;http://painterlin.com/2015/01/30/Git-Resources.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://painterlin.com/2015/01/30/Git-Resources.html&lt;/a&gt;&lt;/h2&gt;</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;master: 默认开发分支&lt;/p&gt;
+&lt;p&gt;origin: 默认远程版本库&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="技术" scheme="http://lzhr.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="Git" scheme="http://lzhr.github.io/tags/Git/"/>
+    
+  </entry>
+  
+</feed>
