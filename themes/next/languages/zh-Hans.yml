@@ -3,7 +3,7 @@ title:
   category: 分类
   tag: 标签
 
-author: 博主
+author: 任飞扬
 
 menu:
   home: 首页
@@ -23,7 +23,7 @@ sidebar:
 post:
   sticky: 置顶
   posted: 发表于
-  in: 分类于
+  in: 分类
   visitors: 阅读次数
   read_more: 阅读全文
   untitled: 未命名
@@ -34,8 +34,8 @@ page:
   tags: 标签
 
 footer:
-  powered: "由 %s 强力驱动"
-  theme: 主题
+  powered: "Powered by %s"
+  theme: Theme
 
 
 counter:
