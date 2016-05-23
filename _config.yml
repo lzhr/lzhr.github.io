@@ -107,4 +107,6 @@ leancloud_visitors:
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: git@github.com:lzhr/lzhr.github.io.git
+  repo: 
+        github: git@github.com:lzhr/lzhr.github.io.git,master
+        coding.net: git@git.coding.net:lzhr/lzhr.git,coding-pages
