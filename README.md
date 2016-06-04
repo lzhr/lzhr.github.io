@@ -1,1 +1,3 @@
 Hexo-Next
+
+Travis CI
