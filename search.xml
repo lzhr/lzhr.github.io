@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  
+  
+    
+    <entry>
+      <title><![CDATA[Java Q&A]]></title>
+      <url>https://lzhr.github.io/2016/07/14/Java-Q&A.html</url>
+      <content type="html"><![CDATA[<a id="more"></a>]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[如何在 Windows 上通过 Kitematic 使用 Docker]]></title>
+      <url>https://lzhr.github.io/2016/06/28/Howto-Interactively-Perform-Tasks-with-Docker-using-Kitematic.html</url>
+      <content type="html"><![CDATA[<p>　　在本篇文章中，我们会学习如何在 Windows 操作系统上安装 Kitematic 以及部署一个测试性的 Nginx Web 服务器。Kitematic 是一个具有现代化的界面设计的自由开源软件，它可以让我们在 Docker 中交互式执行任务。Kitematic 设计的非常漂亮、界面美观。使用它，我们可以简单快速地开箱搭建我们的容器而不需要输入命令，可以在图形用户界面中通过简单的点击从而在容器上部署我们的应用。Kitematic 集成了 Docker Hub，允许我们搜索、拉取任何需要的镜像，并在上面部署应用。它同时也能很好地切换到命令行用户接口模式。目前，它包括了自动映射端口、可视化更改环境变量、配置卷、流式日志以及其它功能。</p>
+<p>下面是在 Windows 上安装 Kitematic 并部署测试性 Nginx Web 服务器的 3 个简单步骤。<br><a id="more"></a></p>
+<h3 id="1-下载-Kitematic"><a href="#1-下载-Kitematic" class="headerlink" title="1. 下载 Kitematic"></a>1. 下载 Kitematic</h3><p>　　首先，我们需要从 github 仓库 <a href="https://github.com/kitematic/kitematic/releases" target="_blank" rel="external">https://github.com/kitematic/kitematic/releases</a> 中下载 Windows 操作系统可用的最新的 Kitematic 发行版。我们用下载器或者 web 浏览器下载了它的可执行 EXE 文件。下载完成后，我们需要双击可执行应用文件。</p>
+<p><img src="http://blog.linoxide.com/wp-content/uploads/2015/06/running-kitematic.png" alt="运行 Kitematic"></p>
+<p>双击应用文件之后，会问我们一个安全问题，我们只需要点击 OK 按钮，如下图所示。</p>
+<p><img src="http://blog.linoxide.com/wp-content/uploads/2015/06/security-warning.png" alt="安全警告"></p>
+<h3 id="2-安装-Kitematic"><a href="#2-安装-Kitematic" class="headerlink" title="2. 安装 Kitematic"></a>2. 安装 Kitematic</h3><p>　　下载好可执行安装程序之后，我们现在就可以在我们的 Windows 操作系统上安装 Kitematic了。安装程序现在会开始下载并安装运行 Kitematic 需要的依赖软件，包括 Virtual Box 和 Docker。如果已经在系统上安装了 Virtual Box，它会把它升级到最新版本。安装程序会在几分钟内完成，但取决于你网络和系统的速度。如果你还没有安装 Virtual Box，它会问你是否安装 Virtual Box 网络驱动。建议安装它，因为它用于 Virtual Box 的网络功能。</p>
+<p><img src="http://blog.linoxide.com/wp-content/uploads/2015/06/installing-kitematic.png" alt="安装 Kitematic"></p>
+<p>所需的依赖 Docker 和 Virtual Box 安装完成并运行后，会让我们登录到 Docker Hub。如果我们还没有账户或者还不想登录，可以点击 <strong>SKIP FOR NOW</strong> 继续后面的步骤。</p>
+<p><img src="http://blog.linoxide.com/wp-content/uploads/2015/06/login-docker-hub.jpg" alt="登录 Docker Hub"></p>
+<p>如果你还没有账户，你可以在应用程序上点击注册（Sign Up）链接并在 Docker Hub 上创建账户。</p>
+<p>完成之后，就会出现 Kitematic 应用程序的第一个界面。正如下面看到的这样。我们可以搜索可用的 docker 镜像。</p>
+<p><img src="http://blog.linoxide.com/wp-content/uploads/2015/07/kitematic-app-launched.jpg" alt="启动 Kitematic"></p>
+<h3 id="3-部署-Nginx-Hello-World-容器"><a href="#3-部署-Nginx-Hello-World-容器" class="headerlink" title="3. 部署 Nginx Hello World 容器"></a>3. 部署 Nginx Hello World 容器</h3><p>　　现在，成功安装完 Kitematic 之后，我们打算部署容器。要运行一个容器，我们只需要在搜索区域中搜索镜像。然后点击 Create 按钮部署容器。在这篇教程中，我们会部署一个小的包含了 Hello World 主页的 Nginx Web 服务器。为此，我们在搜索区域中搜索 Hello World Nginx。看到了容器信息之后，我们点击 Create 来部署容器。</p>
+<p><img src="http://blog.linoxide.com/wp-content/uploads/2015/06/hello-world-nginx-run.jpg" alt="运行 Hello World Nginx"></p>
+<p>镜像下载完成之后，它会自动部署。我们可以查看 Kitematic 部署容器的命令日志。我们也可以在 Kitematic 界面上预览 web 页面。现在，我们通过点击预览在 web 浏览器中查看我们的 Hello World 页面。</p>
+<p><img src="http://blog.linoxide.com/wp-content/uploads/2015/07/nginx-hello-world-browser.jpg" alt="浏览 Nginx Hello World"></p>
+<p>如果我们想切换到命令行接口并用它管理 docker，这里有个称为 Docker CLI 的按钮，它会打开一个 PowerShell，在里面我们可以执行 docker 命令。</p>
+<p><img src="http://blog.linoxide.com/wp-content/uploads/2015/07/docker-cli-powershell.png" alt="Docker CLI PowerShell"></p>
+<p>现在，如果我们想配置我们的容器并执行类似更改容器名称、设置环境变量、指定端口、配置容器存储以及其它高级功能的任务，我们可以在容器设置页面做到这些。</p>
+<p><img src="http://blog.linoxide.com/wp-content/uploads/2015/07/kitematic-container-settings.png" alt="设置 Kitematic Container"></p>
+<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>　　我们终于成功在 Windows 操作系统上安装了 Kitematic 并部署了一个 Hello World Ngnix 服务器。推荐下载安装 Kitematic 最新的发行版，因为会增加很多新的高级功能。由于 Docker 运行在 64 位平台，当前 Kitematic 也是为 64 位操作系统构建。它只能在 Windows 7 以及更高版本上运行。</p>
+<p>在这篇教程中，我们部署了一个 Nginx Web 服务器，类似地我们可以在 Kitematic 中简单的点击就能通过镜像部署任何 docker 容器。Kitematic 已经有可用的 Mac OS X 和 Windows 版本，Linux 版本也在开发中很快就会发布。</p>
+<p>如果你有任何疑问、建议或者反馈，请在下面的评论框中写下来以便我们更改地改进或更新我们的内容。非常感谢！Enjoy :-)</p>
+<hr>
+<p>via: <a href="http://linoxide.com/linux-how-to/interactively-docker-kitematic/" target="_blank" rel="external">http://linoxide.com/linux-how-to/interactively-docker-kitematic/</a></p>
+<p>作者：<a href="http://linoxide.com/author/arunp/" target="_blank" rel="external">Arun Pyasi</a><br>译者：<a href="https://github.com/ictlyh" target="_blank" rel="external">ictlyh</a><br>校对：<a href="https://github.com/wxy" target="_blank" rel="external">wxy</a></p>
+<p>本文由 <a href="https://github.com/LCTT/TranslateProject" target="_blank" rel="external">LCTT</a> 原创翻译，<a href="https://linux.cn/" target="_blank" rel="external">Linux中国</a> 荣誉推出</p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[WebRTC]]></title>
+      <url>https://lzhr.github.io/2016/06/17/WebRTC.html</url>
+      <content type="html"></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[Something]]></title>
+      <url>https://lzhr.github.io/2016/06/12/Where-To-Go.html</url>
+      <content type="html"><![CDATA[<blockquote><p>Do not just seek happiness for yourself. Seek happiness for all. Through kindness. Through mercy.</p>
+<footer><strong>David Levithan</strong><cite>Wide Awake</cite></footer></blockquote>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[prose]]></title>
+      <url>https://lzhr.github.io/2016/06/06/Write-on-Proseio.html</url>
+      <content type="html"><![CDATA[<h2 id="A-New-Post-from-prose-io"><a href="#A-New-Post-from-prose-io" class="headerlink" title="A New Post from prose.io"></a>A New Post from prose.io</h2>]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[测试Travis CI]]></title>
+      <url>https://lzhr.github.io/2016/06/04/Travis-CI-Test.html</url>
+      <content type="html"><![CDATA[<p>测试</p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[Continuous Integration Your Hexo Blog With Travis CI]]></title>
+      <url>https://lzhr.github.io/2016/06/04/Continuous-Integration-Your-Hexo-Blog-With-TravisCI.html</url>
+      <content type="html"><![CDATA[<p>Everything works fine after migrating my blog to <a href="http://hexo.io" target="_blank" rel="external">hexo</a>, it’s just not cool that everytime I have to run <em>hexo deploy</em> to publish my posts.<br>Cool boy uses Travis-CI, right?</p>
+<h3 id="Step-1-generate-a-personal-access-token-at-Github"><a href="#Step-1-generate-a-personal-access-token-at-Github" class="headerlink" title="Step 1 - generate a personal access token at Github"></a>Step 1 - generate a personal access token at Github</h3><p>Go to <a href="https://github.com/settings/applications#personal-access-tokens" target="_blank" rel="external">https://github.com/settings/applications#personal-access-tokens</a> and Generate new token</p>
+<h3 id="Step-2-add-an-environment-variable-to-your-Travis-CI-project"><a href="#Step-2-add-an-environment-variable-to-your-Travis-CI-project" class="headerlink" title="Step 2 - add an environment variable to your Travis-CI project."></a>Step 2 - add an environment variable to your Travis-CI project.</h3><a id="more"></a>
+<ol>
+<li>Go to project Settings and choose Environment Variables</li>
+<li>Variable Name: DEPLOY_REPO</li>
+<li>Variable Value: <a href="https://{github_access_token}@github.com/{github_username}/{repository_name}.git" target="_blank" rel="external">https://{github_access_token}@github.com/{github_username}/{repository_name}.git</a> (for example: <a href="https://8260b82839xx2d19387a51bafca4d5425da7@github.com/ruanyl/ruanyl.github.io.git" target="_blank" rel="external">https://8260b82839xx2d19387a51bafca4d5425da7@github.com/ruanyl/ruanyl.github.io.git</a>)</li>
+</ol>
+<h3 id="Step-3-edit-travis-yml-file"><a href="#Step-3-edit-travis-yml-file" class="headerlink" title="Step 3 - edit .travis.yml file"></a>Step 3 - edit .travis.yml file</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">language: node_js</span><br><span class="line">node_js:</span><br><span class="line">    - <span class="string">"0.12"</span></span><br><span class="line"></span><br><span class="line">before_install:</span><br><span class="line">    - npm install -g hexo</span><br><span class="line"></span><br><span class="line">install:</span><br><span class="line">    - npm install</span><br><span class="line"></span><br><span class="line">before_script:</span><br><span class="line">    - git config --global user.name <span class="string">'ruanyl'</span></span><br><span class="line">    - git config --global user.email <span class="string">'ruanyu1@gmail.com'</span></span><br><span class="line"></span><br><span class="line">script:</span><br><span class="line">    - hexo generate</span><br><span class="line"></span><br><span class="line">after_success:</span><br><span class="line">    - mkdir .deploy</span><br><span class="line">    - <span class="built_in">cd</span> .deploy</span><br><span class="line">    - git init</span><br><span class="line">    - git remote add origin <span class="variable">$DEPLOY_REPO</span></span><br><span class="line">    - cp -r ../public/* .</span><br><span class="line">    - git add -A .</span><br><span class="line">    - git commit -m <span class="string">'Site updated'</span></span><br><span class="line">    - git push --force --quiet origin master</span><br></pre></td></tr></table></figure>
+<h3 id="Notice-If-you-have-3rd-party-themes-installed"><a href="#Notice-If-you-have-3rd-party-themes-installed" class="headerlink" title="Notice! If you have 3rd party themes installed"></a>Notice! If you have 3rd party themes installed</h3><p>You have to add the theme repo as a gitmodule, add a file named: .gitmodules under the root dir of your hexo blog and add:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">[submodule <span class="string">"alex"</span>]</span><br><span class="line">    path = themes/alex</span><br><span class="line">    url = https://github.com/ruanyl/hexo-theme-alex.git</span><br></pre></td></tr></table></figure>
+<h3 id="转载自-Bigruan"><a href="#转载自-Bigruan" class="headerlink" title="转载自 Bigruan"></a>转载自 <a href="http://blog.bigruan.com/2015-03-09-Continuous-Integration-Your-Hexo-Blog-With-TravisCI/" target="_blank" rel="external">Bigruan</a></h3>]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[测试嵌入Github Gist]]></title>
+      <url>https://lzhr.github.io/2016/06/03/Gist-One.html</url>
+      <content type="html"><![CDATA[<a id="more"></a>
+<script src="https://gist.github.com/lzhr/ab5fa76e72551eaff6ff7e240d30554a.js"></script>]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[Tag-Plugins]]></title>
+      <url>https://lzhr.github.io/2016/06/03/Tag-Plugins.html</url>
+      <content type="html"></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[Gist-Two]]></title>
+      <url>https://lzhr.github.io/2016/06/03/Gist-Two.html</url>
+      <content type="html"><![CDATA[<a id="more"></a>
+<script src="//gist.github.com/550bfc9fd5aec9bf05ecaadfe22a263d.js"></script>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[Hello World]]></title>
+      <url>https://lzhr.github.io/2016/05/22/Hello-World.html</url>
+      <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><a id="more"></a>
+<h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[Git常用命令速查表]]></title>
+      <url>https://lzhr.github.io/2015/01/30/Git-Resources.html</url>
+      <content type="html"><![CDATA[<p>master: 默认开发分支</p>
+<p>origin: 默认远程版本库</p>
+<a id="more"></a>
+<p>Head: 默认开发分支</p>
+<p>Head^: Head的父提交</p>
+<h3 id="创建版本库"><a href="#创建版本库" class="headerlink" title="创建版本库"></a>创建版本库</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git clone &lt;url&gt;   #克隆远程版本库</span><br><span class="line">$ git init          #初始化本地版本库</span><br></pre></td></tr></table></figure>
+<h3 id="修改和提交"><a href="#修改和提交" class="headerlink" title="修改和提交"></a>修改和提交</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">$ git status        #查看状态</span><br><span class="line">$ git diff          #查看变更内容</span><br><span class="line">$ git add .         #跟踪所有改动过的文件</span><br><span class="line">$ git add &lt;file&gt;    #跟踪指定的文件</span><br><span class="line">$ git mv &lt;old&gt;&lt;new&gt; #文件改名</span><br><span class="line">$ git rm&lt;file&gt;      #删除文件</span><br><span class="line">$ git rm --cached&lt;file&gt;            #停止跟踪文件但不删除</span><br><span class="line">$ git commit -m &quot;commit messages&quot;  #提交所有更新过的文件</span><br><span class="line">$ git commit --amend               #修改最后一次改动</span><br></pre></td></tr></table></figure>
+<h3 id="查看提交历史"><a href="#查看提交历史" class="headerlink" title="查看提交历史"></a>查看提交历史</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ git log                    #查看提交历史</span><br><span class="line">$ git log -p &lt;file&gt;          #查看指定文件的提交历史</span><br><span class="line">$ git blame &lt;file&gt;           #以列表方式查看指定文件的提交历史</span><br></pre></td></tr></table></figure>
+<h3 id="撤销"><a href="#撤销" class="headerlink" title="撤销"></a>撤销</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ git reset --hard HEAD      #撤销工作目录中所有未提交文件的修改内容</span><br><span class="line">$ git checkout HEAD &lt;file&gt;   #撤销指定的未提交文件的修改内容</span><br><span class="line">$ git revert &lt;commit&gt;        #撤销指定的提交</span><br><span class="line">$ git log --before=&quot;1 days&quot;  #退回到之前1天的版本</span><br></pre></td></tr></table></figure>
+<h3 id="分支与标签"><a href="#分支与标签" class="headerlink" title="分支与标签"></a>分支与标签</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">$ git branch                   #显示所有本地分支</span><br><span class="line">$ git checkout &lt;branch/tag&gt;    #切换到指定分支和标签</span><br><span class="line">$ git branch &lt;new-branch&gt;      #创建新分支</span><br><span class="line">$ git branch -d &lt;branch&gt;       #删除本地分支</span><br><span class="line">$ git tag                      #列出所有本地标签</span><br><span class="line">$ git tag &lt;tagname&gt;            #基于最新提交创建标签</span><br><span class="line">$ git tag -d &lt;tagname&gt;         #删除标签</span><br></pre></td></tr></table></figure>
+<h3 id="合并与衍合"><a href="#合并与衍合" class="headerlink" title="合并与衍合"></a>合并与衍合</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git merge &lt;branch&gt;        #合并指定分支到当前分支</span><br><span class="line">$ git rebase &lt;branch&gt;       #衍合指定分支到当前分支</span><br></pre></td></tr></table></figure>
+<h3 id="远程操作"><a href="#远程操作" class="headerlink" title="远程操作"></a>远程操作</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">$ git remote -v                   #查看远程版本库信息</span><br><span class="line">$ git remote show &lt;remote&gt;        #查看指定远程版本库信息</span><br><span class="line">$ git remote add &lt;remote&gt; &lt;url&gt;   #添加远程版本库</span><br><span class="line">$ git fetch &lt;remote&gt;              #从远程库获取代码</span><br><span class="line">$ git pull &lt;remote&gt; &lt;branch&gt;      #下载代码及快速合并</span><br><span class="line">$ git push &lt;remote&gt; &lt;branch&gt;      #上传代码及快速合并</span><br><span class="line">$ git push &lt;remote&gt; :&lt;branch/tag-name&gt;  #删除远程分支或标签</span><br><span class="line">$ git push --tags                       #上传所有标签</span><br></pre></td></tr></table></figure>
+<h3 id="资料链接"><a href="#资料链接" class="headerlink" title="资料链接"></a>资料链接</h3><ol>
+<li><a href="https://try.github.io/levels/1/challenges/1" target="_blank" rel="external">Try Git</a></li>
+</ol>
+<h2 id="转载自http-painterlin-com-2015-01-30-Git-Resources-html"><a href="#转载自http-painterlin-com-2015-01-30-Git-Resources-html" class="headerlink" title="转载自http://painterlin.com/2015/01/30/Git-Resources.html"></a>转载自<a href="http://painterlin.com/2015/01/30/Git-Resources.html" target="_blank" rel="external">http://painterlin.com/2015/01/30/Git-Resources.html</a></h2>]]></content>
+    </entry>
+    
+  
+  
+</search>
